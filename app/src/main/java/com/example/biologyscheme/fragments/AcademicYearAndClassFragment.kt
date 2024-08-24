@@ -109,7 +109,7 @@ class AcademicYearAndClassFragment : Fragment() {
     private fun setupActionBar(){
         val activity = requireActivity() as AppCompatActivity
         activity.setSupportActionBar(binding.toolBar.toolBar)
-        activity.supportActionBar?.title = requireContext().getString(R.string.progression_sheet)
+        activity.supportActionBar?.title = requireContext().getString(R.string.app_name)
     }
 
 
