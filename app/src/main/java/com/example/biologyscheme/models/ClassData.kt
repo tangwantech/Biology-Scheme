@@ -22,12 +22,14 @@ data class ClassData(
 
 class SchemesForAcademicYearsConverter{
 
+
     @TypeConverter
     fun fromListToJson(value: List<ClassSchemeData>) = Gson().toJson(value)
 
     @TypeConverter
     fun fromJsonToList(value: String) = Gson().fromJson(value, Array<ClassSchemeData>::class.java).toList()
 }
+
 
 
 

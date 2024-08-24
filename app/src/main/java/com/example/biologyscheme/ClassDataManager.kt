@@ -8,11 +8,13 @@ import com.example.biologyscheme.models.ClassSchemeData
 class ClassDataManager(private val context: Context) {
     private var classData: ClassData? = null
     private var roomDatabaseManager = RoomDatabaseManager(context)
+    private val schemesForAllYears = mutableMapOf<String, ClassSchemeData>()
 
     fun loadClassSchemeFromDatabase(className: String, academicYear: String, onClassDataQueryListener: ClassDataQueryListener){
         roomDatabaseManager.loadClassDataFromRoom(className, academicYear, object: RoomDatabaseManager.OnRoomDatabaseQueryListener{
             override fun onClassDataAvailableFromRoom(result: ClassData) {
                 classData = result
+                setSchemesForAllYears()
                 onClassDataQueryListener.onClassDataAvailableFromRoom()
 
             }
@@ -34,9 +36,9 @@ class ClassDataManager(private val context: Context) {
     }
 
     fun getSchemeForAcademicYear(academicYear: String): ClassSchemeData?{
-        val temp = classData?.schemesForAcademicYears?.find { it.academicYear == academicYear}
-        println(classData?.schemesForAcademicYears)
-        return temp
+//        val temp = classData?.schemesForAcademicYears?.find { it.academicYear == academicYear}
+//        println(classData?.schemesForAcademicYears)
+        return schemesForAllYears[academicYear]
 
     }
 
@@ -54,7 +56,8 @@ class ClassDataManager(private val context: Context) {
                     temp.add(result)
                     classData = ClassData(0, className, temp)
                 }
-                println("class data $classData")
+//                println("class data $classData")
+                setSchemesForAllYears()
                 onReadSchemeFromAssertListener.onClassSchemeAvailable()
                 insertClassDataInRoom()
             }
@@ -70,6 +73,7 @@ class ClassDataManager(private val context: Context) {
          temp.addAll(classData?.schemesForAcademicYears!!)
         temp[academicYearIndex] = classSchemeData
         classData?.schemesForAcademicYears = temp
+        setSchemesForAllYears()
         updateClassDataInRoom()
     }
 
@@ -96,6 +100,15 @@ class ClassDataManager(private val context: Context) {
 
     fun clearDatabase(){
         roomDatabaseManager.clearRoomDatabase()
+    }
+
+    fun setSchemesForAllYears(){
+        schemesForAllYears.clear()
+        classData!!.schemesForAcademicYears.forEach {
+            classSchemeData ->
+            val year = classSchemeData.academicYear
+            schemesForAllYears[year] = classSchemeData
+        }
     }
     interface ClassDataQueryListener{
         fun onClassDataAvailableFromRoom()
