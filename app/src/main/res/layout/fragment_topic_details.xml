@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TopicDetailsFragment">
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/tool_bar"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardStyle">
+            <TextView
+                android:id="@+id/tvTopic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/topic_name"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardStyle">
+            <TextView
+                android:id="@+id/tvDateRange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_range"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardStyle">
+            <TextView
+                android:id="@+id/tvFamilyOfSituation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/family_situation"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardStyle">
+            <TextView
+                android:id="@+id/tvNumberOfPeriods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_of_periods"
+                android:minHeight="40dp"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CustomCardStyle" >
+            <TextView
+                android:id="@+id/tvTopicStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/topic_status"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"/>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.cardview.widget.CardView
+        style="@style/CustomCardStyle">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/objectives"
+                android:gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"/>
+            <ListView
+                android:id="@+id/listViewObjectives"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        style="@style/CustomCardStyle">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/subTopics"
+                android:gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"/>
+            <ListView
+                android:id="@+id/listViewSubTopics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

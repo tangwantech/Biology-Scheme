@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Biology Scheme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_academic_years">Select academic years</string>
+    <string name="select_class_name">Select class name</string>
+    <string name="exit">Exit</string>
+    <string name="next">Next</string>
+    <string name="progression_sheet">Progression sheet</string>
+    <string name="date_range">%1$s To %2$s</string>
+    <string name="check_if_topic_has_been_taught">Check if topic has been taught</string>
+    <string name="number_of_periods">Number of periods: %1$s</string>
+    <string name="topic_details">Topic details</string>
+    <string name="completed">Yes</string>
+    <string name="not_completed">No</string>
+    <string name="objectives">Objectives:</string>
+    <string name="subTopics">Subtopics:</string>
+    <string name="topic_name">Topic: %1$s</string>
+    <string name="family_situation">Family of situation: %1$s</string>
+    <string name="topic_status">Has topic been taught: %1$s</string>
+    <string name="number_of_topic_programmed">Number of topic programmed: %1$s</string>
+    <string name="number_of_topics_done">Number of topics done: %1$s</string>
+    <string name="percentage_covered">Percentage covered: %1$s</string>
+    <string name="hours_coverage_statistics">Hours coverage statistics</string>
+    <string name="work_coverage_statistics">Work coverage statistics</string>
+    <string name="number_of_hours_programmed">Number of hours programmed: %1$s</string>
+    <string name="number_of_hours_done">Number of hours done: %1$s</string>
+    <string name="ok">OK</string>
+    <string name="topic">%1$s. %2$s</string>
+</resources>

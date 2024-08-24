@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.ProgressionSheetFragment">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/tool_bar"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/toolBar"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@id/toolBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/loHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="56dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="60dp"
+                android:paddingEnd="0dp"
+                android:layout_toStartOf="@id/btnStatistics">
+                <TextView
+                    android:id="@+id/tvAcademicYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Academic year"
+                    android:gravity="center_vertical"/>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"/>
+                <TextView
+                    android:id="@+id/tvClassName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="class name"
+                    android:gravity="center_vertical"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <ImageButton
+                android:id="@+id/btnStatistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="72dp"
+                android:minHeight="56dp"
+                android:src="@drawable/ic_statistics"
+                android:layout_alignParentEnd="true"
+                android:foreground="?attr/selectableItemBackground"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:contentPadding="8dp"
+        android:layout_below="@id/cardHeader">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
