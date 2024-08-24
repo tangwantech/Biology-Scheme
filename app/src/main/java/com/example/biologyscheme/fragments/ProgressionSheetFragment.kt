@@ -147,13 +147,13 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
         val hoursCoverageStatistics = fragmentViewModel?.getHoursCoverageStatistics()
 
         val statisticsBinding = StatisticsBinding.inflate(LayoutInflater.from(requireContext()))
-        statisticsBinding.tvNumberOfTopicProgrammed.text = requireContext().getString(R.string.number_of_topic_programmed, workCoverageStatistics?.numberOfTopicsProgramed)
-        statisticsBinding.tvNumberOfTopicsDone.text = requireContext().getString(R.string.number_of_topics_done, workCoverageStatistics?.numberOfTopicsDone)
-        statisticsBinding.tvPercentageOfTopicsDone.text = requireContext().getString(R.string.percentage_covered, workCoverageStatistics?.percentageCovered)
+        statisticsBinding.tvNumberOfTopicProgrammed.text = workCoverageStatistics?.numberOfTopicsProgramed
+        statisticsBinding.tvNumberOfTopicsDone.text = workCoverageStatistics?.numberOfTopicsDone
+        statisticsBinding.tvPercentageOfTopicsDone.text = workCoverageStatistics?.percentageCovered
 
-        statisticsBinding.tvNumberOfHoursProgrammed.text = requireContext().getString(R.string.number_of_hours_programmed, hoursCoverageStatistics?.numberOfHoursProgramed)
-        statisticsBinding.tvNumberOfHoursDone.text = requireContext().getString(R.string.number_of_hours_done, hoursCoverageStatistics?.numberOfHoursDone)
-        statisticsBinding.tvPercentageOfHoursDone.text = requireContext().getString(R.string.percentage_covered, hoursCoverageStatistics?.percentageDone)
+        statisticsBinding.tvNumberOfHoursProgrammed.text = hoursCoverageStatistics?.numberOfHoursProgramed
+        statisticsBinding.tvNumberOfHoursDone.text = hoursCoverageStatistics?.numberOfHoursDone
+        statisticsBinding.tvPercentageOfHoursDone.text = hoursCoverageStatistics?.percentageDone
 
         val dialogStatistics = AlertDialog.Builder(requireContext()).apply {
             setView(statisticsBinding.root)

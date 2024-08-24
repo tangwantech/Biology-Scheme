@@ -24,27 +24,73 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>
-            <TextView
-                android:id="@+id/tvNumberOfTopicProgrammed"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/number_of_topic_programmed"
-                android:gravity="center_vertical"/>
-            <TextView
-                android:id="@+id/tvNumberOfTopicsDone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/number_of_topic_programmed"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvNumberOfTopicProgrammed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/number_of_topics_done"
-                android:gravity="center_vertical"/>
-            <TextView
-                android:id="@+id/tvPercentageOfTopicsDone"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/number_of_topics_done"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvNumberOfTopicsDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/percentage_covered"
-                android:gravity="center_vertical"/>
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/percentage_covered"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvPercentageOfTopicsDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
 
@@ -67,28 +113,71 @@
             <com.google.android.material.divider.MaterialDivider
                 android:layout_width="match_parent"
                 android:layout_height="2dp"/>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/number_of_hours_programmed"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvNumberOfHoursProgrammed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <TextView
-                android:id="@+id/tvNumberOfHoursProgrammed"
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/number_of_hours_programmed"
-                android:gravity="center_vertical"/>
-            <TextView
-                android:id="@+id/tvNumberOfHoursDone"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/number_of_hours_done"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvNumberOfHoursDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/number_of_hours_done"
-                android:gravity="center_vertical"/>
-            <TextView
-                android:id="@+id/tvPercentageOfHoursDone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minHeight="44dp"
-                android:text="@string/percentage_covered"
-                android:gravity="center_vertical"/>
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="@string/percentage_covered"
+                    android:gravity="center_vertical"
+                    android:layout_weight=".7"/>
+                <TextView
+                    android:id="@+id/tvPercentageOfHoursDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="44dp"
+                    android:text="12"
+                    android:gravity="center_vertical|end"
+                    android:layout_weight=".3"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
 

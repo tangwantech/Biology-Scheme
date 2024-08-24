@@ -8,6 +8,7 @@ import com.example.biologyscheme.models.HoursCoverageStatistics
 import com.example.biologyscheme.models.ProgressionSheetData
 import com.example.biologyscheme.models.TopicData
 import com.example.biologyscheme.models.WorkCoverageStatistics
+import kotlin.math.round
 
 class ProgressionSheetViewModel : ViewModel() {
     private var academicYearIndex: Int? = null
@@ -65,8 +66,9 @@ class ProgressionSheetViewModel : ViewModel() {
     fun getWorkCoverageStatistics(): WorkCoverageStatistics{
         val numberOfTopicsProgrammed = classSchemeData.topics.size
         val numberOfTopicsDone = classSchemeData.topics.count { it.isTaught }
-        val percentageCovered = ((numberOfTopicsDone.toDouble()/ numberOfTopicsProgrammed.toDouble()) * 100).toString().format(2)
-        val workCoverageStatistics = WorkCoverageStatistics(numberOfTopicsProgrammed.toString(), numberOfTopicsDone.toString(), percentageCovered)
+        val percentageCovered = ((numberOfTopicsDone.toDouble()/ numberOfTopicsProgrammed.toDouble()) * 100)
+        val strPercentageDone = "%.2f".format(percentageCovered)
+        val workCoverageStatistics = WorkCoverageStatistics(numberOfTopicsProgrammed.toString(), numberOfTopicsDone.toString(), strPercentageDone)
         println(workCoverageStatistics)
         return workCoverageStatistics
     }
@@ -76,8 +78,10 @@ class ProgressionSheetViewModel : ViewModel() {
         val numberOfHoursDone = classSchemeData.topics.filter { topicData -> topicData.isTaught  }.sumOf {topicData ->
             topicData.numberOfPeriods
         }
-        val percentageDone = ((numberOfHoursDone.toDouble() / numberOfHoursProgramed.toDouble()) * 100).toString().format()
-        val hoursCoverageStatistics = HoursCoverageStatistics(numberOfHoursProgramed.toString(), numberOfHoursDone.toString(), percentageDone)
+        val percentageDone = ((numberOfHoursDone.toDouble() / numberOfHoursProgramed.toDouble()) * 100)
+        val strPercentageDone = "%.2f".format(percentageDone)
+
+        val hoursCoverageStatistics = HoursCoverageStatistics(numberOfHoursProgramed.toString(), numberOfHoursDone.toString(), strPercentageDone)
         println(hoursCoverageStatistics)
         return hoursCoverageStatistics
     }

@@ -18,13 +18,13 @@
     <string name="topic_name">Topic: %1$s</string>
     <string name="family_situation">Family of situation: %1$s</string>
     <string name="topic_status">Has topic been taught: %1$s</string>
-    <string name="number_of_topic_programmed">Number of topic programmed: %1$s</string>
-    <string name="number_of_topics_done">Number of topics done: %1$s</string>
-    <string name="percentage_covered">Percentage covered: %1$s</string>
+    <string name="number_of_topic_programmed">Number of topic programmed:</string>
+    <string name="number_of_topics_done">Number of topics done:</string>
+    <string name="percentage_covered">Percentage covered:</string>
     <string name="hours_coverage_statistics">Hours coverage statistics</string>
     <string name="work_coverage_statistics">Work coverage statistics</string>
-    <string name="number_of_hours_programmed">Number of hours programmed: %1$s</string>
-    <string name="number_of_hours_done">Number of hours done: %1$s</string>
+    <string name="number_of_hours_programmed">Number of hours programmed:</string>
+    <string name="number_of_hours_done">Number of hours done:</string>
     <string name="ok">OK</string>
     <string name="topic">%1$s. %2$s</string>
 </resources>
