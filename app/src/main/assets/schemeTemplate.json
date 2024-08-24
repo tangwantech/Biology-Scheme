@@ -1,0 +1,23 @@
+{
+  "academicYear": "2024-2025",
+  "className": "Form 1",
+  "topics": [
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "objectives": [],
+      "subTopics": [],
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": [],
+      "lifeSkills": [],
+      "otherResources": [],
+      
+    }
+  ]
+}
