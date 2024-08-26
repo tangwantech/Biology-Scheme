@@ -7,6 +7,11 @@ data class TopicData(val topicName: String,
                      var isTaught: Boolean,
                      val startDate: String,
                      val endDate: String,
-                     val objectives: List<String>,
-                     val subTopics: List<String>
+                     val objectives: TitleAndListData,
+                     val subTopics: TitleAndListData,
+                     val exampleOfSituation: String,
+                     val categoryOfAction: String,
+                     val examplesOfActions: TitleAndListData,
+                     val lifeSkills: TitleAndListData,
+                     val otherResources: TitleAndListData
 )

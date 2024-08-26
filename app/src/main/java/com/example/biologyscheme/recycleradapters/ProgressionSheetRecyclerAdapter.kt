@@ -42,7 +42,7 @@ class ProgressionSheetRecyclerAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.binding.tvTopic.text = context.getString(R.string.topic, (position + 1).toString(), data[position].topicName)
+        holder.binding.tvItem.text = context.getString(R.string.topic, (position + 1).toString(), data[position].topicName)
         holder.binding.tvDateRange.text = context.getString(R.string.date_range, data[position].startDate, data[position].endDate)
         holder.binding.checkBoxTopic.isChecked = data[position].isTaught
     }

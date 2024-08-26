@@ -10,162 +10,69 @@
       "isTaught": false,
       "startDate": "Monday",
       "endDate": "Friday",
-      "objectives": [
-        "Notion of biology and branches",
-        "Explain the relationship between biology and the other sciences",
-        "Describe and distinguish between biology related carriers",
-        "Knowledge in solving daily life problems"
-      ],
-      "subTopics": [
-        "Notion and branches",
-        "Relationship with other science subjects",
-        "Relevance to daily life",
-        "Characteristics of living things and differences between living and non-living things",
-        "Differences between plants and animals"
-      ]
+      "objectives": {
+        "title": "Objectives",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "exampleOfSituation": "Test",
+      "categoryOfAction": "Test",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      }
     },
     {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
       "numberOfPeriods": 4,
       "isTaught": false,
       "startDate": "Monday",
       "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
-    },
-    {
-      "topicName": "Respiration",
-      "moduleName": "Living world",
-      "familyOfSituation": "Testing",
-      "numberOfPeriods": 4,
-      "isTaught": false,
-      "startDate": "Monday",
-      "endDate": "Friday",
-      "objectives": ["Test 1", "Test 2"],
-      "subTopics": ["subtopic 1", "subtopic 2"]
+      "objectives": {
+        "title": "Objectives",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "listData": ["Item 1", "Item 2", "Item 3", "Item 4"],
+        "isExpandable": false
+      },
+      "exampleOfSituation": "Test",
+      "categoryOfAction": "Test",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      }
     }
   ]
 }

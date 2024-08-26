@@ -41,7 +41,7 @@ class MainActivityViewModel: ViewModel() {
 
     fun initClassDataManager(context: Context){
         classDataManager = ClassDataManager(context)
-//        clearDatabase()
+        clearDatabase()
     }
 
     fun readClassDataFromRoom(className: String, fileName: String){

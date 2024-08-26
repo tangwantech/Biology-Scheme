@@ -10,14 +10,33 @@
       "isTaught": false,
       "startDate": "Monday",
       "endDate": "Friday",
-      "objectives": [],
-      "subTopics": [],
+      "objectives": {
+        "title": "Objectives",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
       "exampleOfSituation": "",
       "categoryOfAction": "",
-      "examplesOfActions": [],
-      "lifeSkills": [],
-      "otherResources": [],
-      
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "listData": ["Item 1", "Item 2"],
+        "isExpandable": false
+      }
     }
   ]
 }
