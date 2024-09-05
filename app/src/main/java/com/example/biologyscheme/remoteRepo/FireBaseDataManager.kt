@@ -25,7 +25,7 @@ class FireBaseDataManager {
             dbRef.child(className).get().addOnSuccessListener {
                 println(it.value)
 //                scheme = Gson().fromJson(it.value.toString(), ClassSchemeData::class.java)
-                println(scheme)
+//                println(scheme)
             }
             withContext(Dispatchers.Main){
                 if (scheme != null) {
