@@ -23,8 +23,8 @@
                     android:minHeight="40dp"
                     android:text="@string/list_title"
                     android:gravity="center_vertical"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
                     android:isScrollContainer="true"
                     android:layout_weight=".8"/>
                 <FrameLayout
@@ -45,18 +45,30 @@
 
             </LinearLayout>
 
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:visibility="gone"/>
 
 
         <androidx.cardview.widget.CardView
             android:id="@+id/listViewCard"
             style="@style/CustomCardStyle"
-            android:visibility="gone">
-            <ListView
-                android:id="@+id/listView"
+            android:visibility="gone"
+            app:contentPadding="6dp">
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp" />
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tvValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    />
+            </ScrollView>
+
         </androidx.cardview.widget.CardView>
 
     </androidx.appcompat.widget.LinearLayoutCompat>

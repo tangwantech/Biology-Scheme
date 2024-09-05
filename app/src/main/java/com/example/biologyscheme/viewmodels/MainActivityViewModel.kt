@@ -52,12 +52,28 @@ class MainActivityViewModel: ViewModel() {
                     _classSchemeAvailable.value = classSchemeData
                 }else{
                     loadSchemeFromAssert(className, fileName)
+//                    loadSchemeFromFireBase(className)
                 }
 
             }
 
             override fun onClassDataUnAvailableFromRoom() {
                 loadSchemeFromAssert(className, fileName)
+//                loadSchemeFromFireBase(className)
+            }
+
+        })
+    }
+
+    private fun loadSchemeFromFireBase(className: String){
+        classDataManager.loadSchemeFromFireBase(className, academicYear!!, object: ClassDataManager.OnReadSchemeFromAssertListener{
+            override fun onClassSchemeAvailable() {
+                val classSchemeData = classDataManager.getSchemeForAcademicYear(academicYear!!)
+                _classSchemeAvailable.value = classSchemeData
+            }
+
+            override fun onClassSchemeUnavailable() {
+                _classSchemeAvailable.value = null
             }
 
         })

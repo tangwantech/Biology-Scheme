@@ -30,4 +30,5 @@
     <string name="module">Module: %1$s</string>
     <string name="category_of_action">Category of action: %1$s</string>
     <string name="example_of_situation">Example of action: %1$s</string>
+    <string name="progression_sheet_unavailable">Progession sheet unavailable</string>
 </resources>

@@ -72,25 +72,20 @@ class TopicDetailsFragment : Fragment() {
             binding.dropdownExampleOfSituation.tvItem.text = requireContext().getString(R.string.example_of_situation, topicData.exampleOfSituation)
 
 
-            binding.dropdownObjectives.tvListViewTitle.text = topicData.objectives.title
-            val objectivesAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, topicData.objectives.listData)
-            binding.dropdownObjectives.listView.adapter = objectivesAdapter
+            binding.dropdownAbilities.tvListViewTitle.text = topicData.abilities.title
+            binding.dropdownAbilities.tvValue.text = topicData.abilities.value
 
             binding.dropdownSubtopics.tvListViewTitle.text = topicData.subTopics.title
-            val subtopicsAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, topicData.subTopics.listData)
-            binding.dropdownSubtopics.listView.adapter = subtopicsAdapter
+            binding.dropdownSubtopics.tvValue.text = topicData.subTopics.value
 
             binding.dropdownExamplesOfActions.tvListViewTitle.text = topicData.examplesOfActions.title
-            val examplesOfActionsAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, topicData.examplesOfActions.listData)
-            binding.dropdownExamplesOfActions.listView.adapter = examplesOfActionsAdapter
+            binding.dropdownExamplesOfActions.tvValue.text = topicData.examplesOfActions.value
 
             binding.dropdownLifeSkills.tvListViewTitle.text = topicData.lifeSkills.title
-            val lifeSkillsAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, topicData.lifeSkills.listData)
-            binding.dropdownLifeSkills.listView.adapter = lifeSkillsAdapter
+            binding.dropdownLifeSkills.tvValue.text = topicData.lifeSkills.value
 
             binding.dropdownOtherResources.tvListViewTitle.text = topicData.otherResources.title
-            val otherResourcesAdapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, topicData.otherResources.listData)
-            binding.dropdownOtherResources.listView.adapter = otherResourcesAdapter
+            binding.dropdownOtherResources.tvValue.text = topicData.otherResources.value
         }
     }
 
@@ -108,10 +103,12 @@ class TopicDetailsFragment : Fragment() {
                 binding.dropdownSubtopics.listViewCard.visibility = View.GONE
                 binding.dropdownSubtopics.icDown.visibility = View.VISIBLE
                 binding.dropdownSubtopics.icUp.visibility = View.GONE
+                binding.dropdownSubtopics.divider.visibility = View.GONE
             } else {
                 binding.dropdownSubtopics.listViewCard.visibility = View.VISIBLE
                 binding.dropdownSubtopics.icDown.visibility = View.GONE
                 binding.dropdownSubtopics.icUp.visibility = View.VISIBLE
+                binding.dropdownSubtopics.divider.visibility = View.VISIBLE
             }
         }
 
@@ -120,23 +117,27 @@ class TopicDetailsFragment : Fragment() {
                 binding.dropdownExamplesOfActions.listViewCard.visibility = View.GONE
                 binding.dropdownExamplesOfActions.icDown.visibility = View.VISIBLE
                 binding.dropdownExamplesOfActions.icUp.visibility = View.GONE
+                binding.dropdownExamplesOfActions.divider.visibility = View.GONE
             }else{
                 binding.dropdownExamplesOfActions.listViewCard.visibility = View.VISIBLE
                 binding.dropdownExamplesOfActions.icDown.visibility = View.GONE
                 binding.dropdownExamplesOfActions.icUp.visibility = View.VISIBLE
+                binding.dropdownExamplesOfActions.divider.visibility = View.VISIBLE
             }
 
         }
 
-        binding.dropdownObjectives.loDropDown.setOnClickListener {
-            if(binding.dropdownObjectives.listViewCard.visibility == View.VISIBLE){
-                binding.dropdownObjectives.listViewCard.visibility =View.GONE
-                binding.dropdownObjectives.icDown.visibility = View.VISIBLE
-                binding.dropdownObjectives.icUp.visibility = View.GONE
+        binding.dropdownAbilities.loDropDown.setOnClickListener {
+            if(binding.dropdownAbilities.listViewCard.visibility == View.VISIBLE){
+                binding.dropdownAbilities.listViewCard.visibility =View.GONE
+                binding.dropdownAbilities.icDown.visibility = View.VISIBLE
+                binding.dropdownAbilities.icUp.visibility = View.GONE
+                binding.dropdownAbilities.divider.visibility = View.GONE
             }else{
-                binding.dropdownObjectives.listViewCard.visibility = View.VISIBLE
-                binding.dropdownObjectives.icDown.visibility = View.GONE
-                binding.dropdownObjectives.icUp.visibility = View.VISIBLE
+                binding.dropdownAbilities.listViewCard.visibility = View.VISIBLE
+                binding.dropdownAbilities.icDown.visibility = View.GONE
+                binding.dropdownAbilities.icUp.visibility = View.VISIBLE
+                binding.dropdownAbilities.divider.visibility = View.VISIBLE
             }
 
         }
@@ -146,10 +147,12 @@ class TopicDetailsFragment : Fragment() {
                 binding.dropdownLifeSkills.listViewCard.visibility = View.GONE
                 binding.dropdownLifeSkills.icDown.visibility = View.VISIBLE
                 binding.dropdownLifeSkills.icUp.visibility = View.GONE
+                binding.dropdownLifeSkills.divider.visibility = View.GONE
             }else{
                 binding.dropdownLifeSkills.listViewCard.visibility = View.VISIBLE
                 binding.dropdownLifeSkills.icDown.visibility = View.GONE
                 binding.dropdownLifeSkills.icUp.visibility = View.VISIBLE
+                binding.dropdownLifeSkills.divider.visibility = View.VISIBLE
             }
 
         }
@@ -159,10 +162,12 @@ class TopicDetailsFragment : Fragment() {
                 binding.dropdownOtherResources.listViewCard.visibility =  View.GONE
                 binding.dropdownOtherResources.icDown.visibility = View.VISIBLE
                 binding.dropdownOtherResources.icUp.visibility = View.GONE
+                binding.dropdownOtherResources.divider.visibility = View.GONE
             } else {
                 binding.dropdownOtherResources.listViewCard.visibility = View.VISIBLE
                 binding.dropdownOtherResources.icDown.visibility = View.GONE
                 binding.dropdownOtherResources.icUp.visibility = View.VISIBLE
+                binding.dropdownOtherResources.divider.visibility = View.VISIBLE
             }
         }
     }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147538652330",
+    "project_id": "biology-scheme",
+    "storage_bucket": "biology-scheme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147538652330:android:fd92910bc769d7df11f4d3",
+        "android_client_info": {
+          "package_name": "com.example.biologyscheme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpdWIs_h0FqQCpCaFX7yngIFYik4jJPfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

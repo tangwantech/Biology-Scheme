@@ -1,5 +1,6 @@
 package com.example.biologyscheme.fragments
 
+import android.app.DatePickerDialog
 import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -22,8 +23,15 @@ import com.example.biologyscheme.models.TopicData
 import com.example.biologyscheme.recycleradapters.ProgressionSheetRecyclerAdapter
 import com.example.biologyscheme.viewmodels.MainActivityViewModel
 import com.example.biologyscheme.viewmodels.ProgressionSheetViewModel
+import java.sql.Date
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
-class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnRecyclerItemClickListener, ProgressionSheetRecyclerAdapter.OnItemCheckStateChangeListener {
+class ProgressionSheetFragment : Fragment(),
+    ProgressionSheetRecyclerAdapter.OnRecyclerItemClickListener,
+    ProgressionSheetRecyclerAdapter.OnItemCheckStateChangeListener,
+    ProgressionSheetRecyclerAdapter.OnEditDateButtonClickListener{
 
     companion object {
         const val FRAGMENT_NAME = "ProgressionSheetFragment"
@@ -107,16 +115,39 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
     private fun setupObservers(){
         fragmentViewModel?.progressionSheetDataAvailable?.observe(requireActivity()){
             if(it){
+//                println(fragmentViewModel?.getProgressionSheet())
                 recyclerAdapter.updateData(fragmentViewModel?.getProgressionSheet()!!)
                 recyclerAdapter.notifyDataSetChanged()
+                binding.tvProgressionUnavailable.visibility = View.GONE
+                binding.recyclerView.visibility = View.VISIBLE
+
+            }else{
+                binding.tvProgressionUnavailable.visibility = View.VISIBLE
+                binding.recyclerView.visibility = View.GONE
             }
+//            showHideMainDisplay(it)
+//            println("Testing........")
         }
 
         activityViewModel?.classSchemeAvailable?.observe(requireActivity()){classSchemeData  ->
-            classSchemeData?.let {
-                fragmentViewModel?.setClassSchemeData(it)
-            }
+//            classSchemeData?.let {
+//                fragmentViewModel?.setClassSchemeData(it)
+//            }
 
+            fragmentViewModel?.setClassSchemeData(classSchemeData)
+
+        }
+    }
+
+    private fun showHideMainDisplay(dataAvailable: Boolean){
+        if(dataAvailable){
+            binding.recyclerView.visibility = View.VISIBLE
+            binding.tvProgressionUnavailable.visibility = View.GONE
+            println("Showing recycler view")
+        }else{
+            binding.recyclerView.visibility = View.GONE
+            binding.tvProgressionUnavailable.visibility = View.VISIBLE
+            println("Hiding recycler view")
         }
     }
 
@@ -127,7 +158,7 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
         binding.recyclerView.layoutManager = layoutMan
 
         binding.recyclerView.addItemDecoration(DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL))
-        recyclerAdapter = ProgressionSheetRecyclerAdapter(requireContext(), this, this)
+        recyclerAdapter = ProgressionSheetRecyclerAdapter(requireContext(), this, this, this)
 
         binding.recyclerView.adapter = recyclerAdapter
 
@@ -164,6 +195,29 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
         dialogStatistics.show()
     }
 
+    private fun displayDatePicker(topicIndex: Int, editButtonIndex: Int){
+        val datePicker = DatePickerDialog(requireContext())
+        val formatter = DateTimeFormatter.ofPattern("d/M/yyyy")
+        val tempDate = fragmentViewModel?.getTopicDate(topicIndex, editButtonIndex)
+
+        datePicker.setButton(DatePickerDialog.BUTTON_POSITIVE, "OK") { d, i ->
+
+            val day = datePicker.datePicker.dayOfMonth
+            val month = datePicker.datePicker.month + 1
+            val year = datePicker.datePicker.year
+            fragmentViewModel?.updateTopicDate(topicIndex, editButtonIndex, "$day/$month/$year")
+            recyclerAdapter.notifyItemChanged(topicIndex)
+            d.dismiss()
+
+        }
+        datePicker.show()
+        if(tempDate?.isNotEmpty()!!){
+            val date = LocalDate.parse(tempDate, formatter)
+            datePicker.datePicker.updateDate(date.year, date.monthValue - 1 , date.dayOfMonth)
+        }
+
+    }
+
     override fun onItemClicked(itemPosition: Int) {
         onNavigateToTopicDetailsFragmentListener.onNavigateToTopicDetailsFragment(itemPosition)
     }
@@ -176,6 +230,7 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
     override fun onStop() {
         super.onStop()
         fragmentViewModel?.getClassSchemeData()?.let{
+//            println(it)
             activityViewModel?.updateSchemeDataForAcademicYear(it)
         }
 
@@ -185,6 +240,10 @@ class ProgressionSheetFragment : Fragment(), ProgressionSheetRecyclerAdapter.OnR
         fun onNavigateToTopicDetailsFragment(itemPosition: Int)
     }
 
+    override fun onEditDateClicked(topicIndex: Int, dateEditButtonIndex: Int) {
+//       println("Topic index: $topicIndex, Date button index: $dateEditButtonIndex")
+        displayDatePicker(topicIndex, dateEditButtonIndex)
+    }
 
 
 }

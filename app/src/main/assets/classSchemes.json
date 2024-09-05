@@ -1,0 +1,915 @@
+{
+  "Form 1": {
+    "academicYear": "2024-2025",
+    "className": "Form 1",
+    "topics": [
+      {
+        "topicName": "Understanding Biology",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Notion of biology and branches,\n-Explain the relationship between biology and the other sciences,\n-Describe and distinguish between biology related careers,\n-The role of biological knowledge in solving daily life problems,\n-Differentiate between living and non-living things,\n-How scientists investigate nature and solve problems,\n-Protect nature, life and life forms,\n-Observe, describe and appreciate the beauty of organisms in their natural milieu,\n-Communicate scientific information,\n-Distinguish between plant and animal cells,\n-Appreciate the cell as the origin and building block of life.",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion and branches,\n-Relationship with other sciences,\n-Relevance to daily life,\n-Characteristics of living things and differences between living and non-living things,\n-Differences between plants and animals,\n-Studying living things,\n-The cell as the basic structural and functional unit of life (Cell as seen under the light microscope)",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Understanding life and life forms",
+        "categoryOfAction": "Appropriating knowledge of life and life forms",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Distinguishing between living and non-living things,\n-Describing and explaining the scientific way of acquiring knowledge and solving problems,\n\t-Creating observation charts and nature's calendars,\n-Communicating scientific information,\n-Describing the differences between plant and animal cells,\n-Distinguishing different types of cells as the origin and building blocks of life",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions,\n-Interest in scientific advancement,\n-Open-mindedness,\n\t-Love of nature,\n\t-Team spirit and cooperation,\n-Decision making and critical spirit,\n-Creative thinking,\n-Logical reasoning,\n-Problem solving,\n-Management and respect for the environment,\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Didactic materials,\n-Charts,\n-Microscope,\n-Professionals,\n-Companies",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Environment and habitat",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Choice of crops and animals according to seasons or out of season and soil types",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Effects of environmental factors on living organisms (light , water, temperature, wind),\n-Effects of day and night on living organisms,\n-Effects of changing seasons on living organism,\n-Edaphic factors,\n-Interactions between living organisms (feeding/food chain, exchange of gases, reproduction, competition, habitat",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Practicing agriculture and animal husbandry",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Explaining the influence of the environment on plant and animal production,\n-Planting crops and breeding animals in function of the characteristics of the environment,\n-Identifying the steps in cultivating some common crops in Cameroon",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions,\n-Interest in scientific advancement,\n-Open-mindedness,\n-Love of nature,\n-Team spirit and cooperation,\n-Decision making and critical spirit,\n-Creative thinking,\n-Logical reasoning,\n-Problem solving,\n-Management and respect for the environment,\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Didactic materials,\n-Farm inputs",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Understanding Soil",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Item 1,\n-Item 2",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Improving soil quality,\n-Qualities of good soil,\n-Responsible farming practices (Crop rotation, irrigation, contour farming, terracing),\n-Planting techniques",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Using the soil in the production of consumable resources",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Preventing bush fires,\n-Planting trees,\n-Preventing erosion by practicing terrace farming,\n-Cover cropping,\n-Improving and restoring soil quality by using manure, fertilizers, crop rotation, irrigation etc",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions,\n-Interest in scientific advancement,\n-Open-mindedness,\n-Love of nature,\n-Team spirit and cooperation,\n-Decision making and critical spirit,\n-Creative thinking,\n-Logical reasoning,\n-Problem solving,\n-Management and respect for the environment,\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "Agricultural technicians",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Soil erosion",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion, types and causes,\n-Effects of soil erosion,\n-Prevention of soil erosion",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Soil degradation",
+        "categoryOfAction": "Preventing soil degradation",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Preventing bush fires,\n-Preventing erosion by practicing terrace farming,\n-Cover cropping,\n-Improving and restoring soil quality by using manure,\n-fertilizers, crop rotation, irrigation etc",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Awareness of the protection of the soil,\n-Respect for the environment",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Hunting, Fishing and Gardening",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Practicing sustainable exploitation of natural resources",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Hunting,\n-Fishing,\n-Gardening",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "",
+        "categoryOfAction": "",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Finding out about locally available edible species, endangered species,\n-Classifying the species identified,\n-Practicing sustainable hunting, fishing and harvesting",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions,\n-Interest in scientific advancement,\n-Open-mindedness,\n-Love of nature,\n-Team spirit and cooperation,\n-Decision making and critical spirit,\n-Creative thinking,\n-Logical reasoning,\n-Problem solving,\n-Management and respect for the environment,\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "Personnel from Forestry department",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Role of some local medicinal plants",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Growing and use of some medicinal plants",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion, Types and uses\n,-Methods of preparation/application\n-Conservation of medicinal plants.",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Conserving natural resources (food and medicinal plants)",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "Cultivating medicinal plants",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions\n-Interest in scientific advancement\n-Open-mindedness\n-Love of nature,\n-Team spirit and cooperation\nDecision making and critical spirit\n-Creative thinking\n-Logical reasoning\n-Problem solving\n-Management and respect for the environment\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Herbalists, \n-Traditional healers",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Understanding Biology",
+        "moduleName": "Reproductive health",
+        "familyOfSituation": "Improvement of reproductive health",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Recognition and description of signs of puberty\n-Dissection of a small mammal to observe and describe the reproductive organs",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Puberty\n-Primary and secondary sexual characteristics\nFertilisation and pregnancy",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Early pregnancies",
+        "categoryOfAction": "Preventing and avoiding early pregnancy",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "Identifying signs of pregnancy",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Self respect and respect for others\n-Respect of different opinions\n-Interest in scientific progress",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps\n-Social workers\n-Dissection kit",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Early pregnancies",
+        "moduleName": "Health education",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Sex education and cultivating the right attitude towards sex and sexuality",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion\n-Causes\n-Effects\n-Consequences\n-Prevention",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Early pregnancies",
+        "categoryOfAction": "Preventing and avoiding early pregnancy",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Practising abstinence\n-Avoiding sexual promiscuity\n-Raising awareness through writing of slogans\n-Participating in talks on health education",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Self respect and respect for others\n-Respect of different opinions\n-Interest in scientific progress",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps\n-Social workers\n-Dissection kit",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "STI, HIV/AIDS",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Practice hygiene rules\n-Screen for serological status\n-Seek medical treatment if sick\n-Stick to one partner",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion of STIs and Types(Gonorrhea, Syphilis, Chlamydia, Hepatitis B)\n-HIV/AIDS(Causative agent, Method of spread, incubation period, signs and symptoms, effects on the body)\n-Prevention of STIs and HIV/AIDS",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Prevalence of STIs and HIV/AIDS",
+        "categoryOfAction": "Preventing/avoiding STIs and HIV/AIDS",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Practising personal hygiene\n-Accepting voluntary screening with or without a partner(s)\n-Seeking medical attention with or without a partner(s)\n-Respecting medical prescription and getting complete treatment when sick",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respect of hygiene rules\n-Respect medical prescriptions",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps\n-Social workers",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Quality nutrition",
+        "moduleName": "Health education",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Draw up appropriate menu to prevent deficiencies and excess/over feeding diseases",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Classes of food and sources\n-Nutritional diseases due to deficiency(Night blindness, beri-beri, scurvy, rickets, osteomalacia, slow blood clotting, anaemia, goitre, kwashiorkor, marasmus)\n-Notion of balanced diet\n-Healthy eating habits",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Prevalence of nutritional diseases",
+        "categoryOfAction": "Preventing/eliminating deficiency and overfeeding diseases",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Planning balanced diets\n-Adopting good feeding habits",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Adopt good feeding habits\n-Observe hygiene rules for feeding\n-Proportion, portion and frequency control",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Dieticians\n-Medical personnel\n-Social workers",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Food labelling",
+        "moduleName": "Health education",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Practice good food handling\n-Paying attention to food labels\n-Do regular sports or physical exercises",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion and elements of a food label",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Food poisoning",
+        "categoryOfAction": "Preventing /avoiding food poisoning",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Practising food and environmental hygiene rules\n-Preparing and preserving food properly\n-Reading, interpreting, understanding abd applying knowledge of information on labels of packaged foods to distinguish expired from unexpired foods",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "Observe hygiene of food and digestion",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Dieticians\n-Medical personnel\n-Social workers",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Water management",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources, water, air, soil",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Techniques of treatment of used or polluted water\n-Practice hygiene in relation with water\n-Contribute to aforestation\n-Contribute to the proper management of water/toxic products",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Natural water sources\n-Water pollution\n-Different types and sources of water pollutants and their effects on the environment(untreated sewage e.g. human faeces, inorganic fertilizers, pesticides, chemical fishing, oil spillage from tankers, mercury, hot water from industries and factories)\n-Small scale purification of water for household use(Filtration, boiling, chlorination, exposure to sunlight, addition of eau de javel\n-Uses of water at home(Drinking, washing, cooking, taking drugs, watering plants and surrounding etc)",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Water pollution",
+        "categoryOfAction": "Preventing water pollution",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-identifying and protecting water sources\n-Constructing and using latrines, septic tanks, etc\n-Advocating, educating, raising awareness and sensitizing people on the location of factories, waste and refuse management sites\n-Purifying/recycling used or polluted water, wastes and refuse\n-Practising the three \"Rs\"(Reduce, Recycle and Reuse)",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Daily practices\n-Respect of hygiene rules",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Technicians in sustainable rural development, hygiene and sanitary personnel\n-Personnel from the Ministry of Environment and nature protection",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Air pollution",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources, water, air, soil",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Techniques of treatment of used or polluted water\n-Practice hygiene in relation with water\n-Contribute to aforestation\n-Contribute to the proper management of water/toxic products",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Causes(Noise, CO2, CO, SO2, Oxides of nitrogen, smoke, ozone depleting substances). NB for each air pollutant, mention source(s) and effects\n-Prevention of air pollution",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Air pollution",
+        "categoryOfAction": "Preventing air pollution",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Advocating for stricter control of the emission of toxic and radioactive substances into the atmosphere\n-Planting trees",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respect for the environment(Prohibition in burning tyres, plastic materials, throwing pollutants in nature, sensitizing the population on the dangers of bush fires)",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Technicians in sustainable rural development, hygiene and sanitary personnel\n-Personnel from the Ministry of Environment and nature protection",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Land pollution",
+        "moduleName": "Living World",
+        "familyOfSituation": "Sustainable management of natural resources, water, air, soil",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Use of bins\n-Sorting household waste\n-Recycling of household waste(composting)\n-Rational use of chemicals",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "Causes(Littering, open/illegal dumps, old abandoned cars, pesticides, chemical fertilizers). NB. For each land pollutant mention source(s) and effects\n-Prevention of land pollution.",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Land pollution",
+        "categoryOfAction": "Preventing land pollution",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Educating, raising awareness and sensitizing on the consequences of land pollution\n-Educating on the importance of using refuse cans for disposal of wastes and refuse\n-Using chemical products such as pesticides, fertilizers, etc, rationally\n-Sorting and recycling all wastes and refuse\n-Removing non-biodegradable objects from the soil",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "Awareness in protection of land",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "Resource personnel on environmental conservation",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Biodiversity and its conservation",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources, water, air, soil",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Responsible farming techniques\n-Conservation techniques\n-Communication techniques",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion\n-Concept of interdependence between living organisms(feeding, respiratory)\n-National Legislation on poaching, fishing and forest exploitation",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Rupture of ecological equilibrium",
+        "categoryOfAction": "Conserving biodiversity",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Identifying the role of biodiversity in the ecosystem and to the economy\n-Educating, raising awareness and sensitizing on the consequences of biodiversity loss\n-Developing civic responsibility and respecting legislation on poaching, overfishing and over exploitation of forest and forest resources\n-Designing and implementing projects on biodiversity conservation and protection",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respect of the law or legislation\n-Open mindedness",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Technicians in agriculture\n-Resource persons in wildlife and forest\n-Specialist on management",
+          "isExpandable": false
+        }
+      }
+
+    ]
+  },
+  "Form 2": {
+    "academicYear": "2024-2025",
+    "className": "Form 2",
+    "topics": [
+      {
+        "topicName": "Reproduction in plants",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Dissection of a flower or grain\n-Use of the hand lens\n-Choice of seeds\n-Grow selected plants using one or a combination of vegetative propagation techniques\n-Observation of food reserves(tubers, fruits, grain)",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Asexual reproduction in plants(Natural and artificial vegetative multiplication\n-Sexual reproduction in plants(From the flower to seed and fruit simply treated)\n-Seed dispersal(Notion, importance, agents, adaptations of different fruits and seeds to their methods of dispersal)\n-Seed germination(Notion, types, external factors necessary for germination)",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Practicing agriculture",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Planting crops in function of the characteristics of the environment\n-Cultivating plants for their fruits, seeds, leaves, roots",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Mastery of improved reproductive techniques in plants",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Didactic materials\n-Farm inputs\n-Veterinary personnel\n-Agricultural extension staff",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Improving the quality and quantity of plant yield",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Identification and destruction of plant parasites/pests\n-Identification and treatment of plant diseases\n-Prevention of plant diseases(use of pesticides on plants)\n-Choice of predator species/Plant products for biological control",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "preventing/elimination of plant diseases/pests/parasites(African mistletoe, tomato rot, potato blight, corn smut, weevils, corn stalk borer, fall army worm\n-Biological and chemical control of pest",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Preventing/treating plant diseases",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Identifying cause(s) of plant diseases\n-Providing appropriate treatment",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Curiosity and sense of observation,\n-Respect of others opinions,\n-Interest in scientific advancement,\n-Open-mindedness,\n\t-Love of nature,\n\t-Team spirit and cooperation,\n-Decision making and critical spirit,\n-Creative thinking,\n-Logical reasoning,\n-Problem solving,\n-Management and respect for the environment,\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Agricultural technician\n-Animal breeding technician\n-Veterinarians",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Transformation of foodstuffs",
+        "moduleName": "Living World",
+        "familyOfSituation": "Supply of man's needs in animals and plant resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Techniques of transformation of plant products\n-Conservation techniques of foodstuffs\n-Steady food supplies\n-Self employment\n-Income generation\n-Good techniques of food preservation and preparation\n-Food managerial skills",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion, importance/advantages, disadvantages\n-Transformation of cassava into bobolo, miondo, garri, kum kum/cassava flour\n-Transformation of corn(into corn flour, pap and sha/corn beer)\n-Transformation of millet(into flour, pap and bili bili)\n-Transformation of milk into yoghurt\n-Food preservation and preparation(Notion, importance of food preservation)\n-Some common methods of food preservation(smoking, drying/sunning, freezing, salting, heating)\n-Some common methods of food preparation(boiling, steaming, frying, roasting, grilling, baking)",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Insufficient consumable resources",
+        "categoryOfAction": "Preserving consumable resources(food of plant and animal origin)",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Transforming products of plant origin into flour, extraction of palm oil, shear nut oil\n-Preserving food by drying etc",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Transformation and preservation of common perishable foodstuffs of plant and animal origin\n-Creative critical thinking skills\n-Problem solving skills\n-Management and respect for the environment\n-Effective communication",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "Food processing technicians and dieticians",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Nutrition related diseases",
+        "moduleName": "Health education",
+        "familyOfSituation": "Improvement of nutritional health",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Identify the recipes for at least two local meals pointing out defects where applicable\n-Draw up appropriate menus to prevent deficiencies and excess/over feeding\n-Practice weekly meal planning to ensure balance dieting\n-Useful decisions on community health",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Obesity\n-Body mass index as an indication of over feeding or under feeding\n-Caloric values of foods\n-Healthy eating habits(proportion, portion and frequency control)\n-Project design to combat an identified nutritional disease within the community",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Improvement of nutritional health",
+        "categoryOfAction": "Prevalence of nutritional diseases",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Estimating Body Mass Index(BMI) to control weight and prevent nutritional diseases\n-Reading, interpreting, understanding and applying knowledge of information on labels of packaged foods to select the type of food to consume\n-Determining the caloric value of different food types and meals\n-Designing a project to solve an identified deficiency disease or nutritional disease in the local community",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Adopt good feeding habit\n-relating feeding habits to some nutritional diseases\n-Observe hygiene rules for feeding",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Dieticians\n-Medical personnel\n-Social workers",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Physical and social health",
+        "moduleName": "Health education",
+        "familyOfSituation": "Improvement of reproductive health",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Practice at least a team and an individual sporting activity\n-Practice planning of weekly activities\n-Writing awareness message and slogans",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion and importance of exercise to the body(muscles, brain, bones, body mass, blood circulation)\n-Notion and importance of rest to the body",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Physical and social health",
+        "categoryOfAction": "Maintaining physical and social health",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Exploring the role of exercise to health\n-Practising sports to keep fit\n-Planning daily weekly activity schedules/timetable to include study time, rest and exercise",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respecting roles of different sports and games\n-Respecting one's own schedules\n-Time management and respecting appointment times with other persons",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps and NGOs\n-Social workers and politicians\n-Peer educators",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Health and social effects of drugs",
+        "moduleName": "Health education",
+        "familyOfSituation": "Improvement of reproductive health",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Identifying symptoms and diseases caused by alcohol consumption, cigarette smoking and drug consumption\n-Practice a lifestyle free from body intoxication",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Effects of alcohol consumption, cigarette smoking, marijuana, smoking and tramadol consumption",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Physical and social health",
+        "categoryOfAction": "Maintaining physical and social health",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "\n-Exploring reasons why alcohol, cigarettes and drug consumption should be avoided\n-Designing posters, slogans and other means of communication to demonstrate the health consequences of consuming alcohol, cigarettes and illicit drugs",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "Avoiding the consumption of alcohol, cigarettes and drugs",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps\n-Social workers\n-Peer educators",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Practices harmful to reproductive health",
+        "moduleName": "Health education",
+        "familyOfSituation": "Improvement of reproductive health",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Writing out advocacy messages, designing slogans and posters\n-Preparation of sessions of educative talks\n-Healthy courtship\n-Avoiding deviant sexual practices which are against nature",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Early marriage\n-Female genital mutilation\n-Breast ironing\n-Induced abortion",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Cultural practices harmful to reproductive health(taboos, sex mutilation, breast ironing, rape",
+        "categoryOfAction": "-Caring for and maintaining the reproductive organs in good health\n-Advocating to stop harmful emergent behaviour",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Practising personal hygiene rules\n-Identifying the problems\n-Preparing advocacy messages and slogans in the form of solutions to the problems\n-Identifying target Policy makers",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "Communication, sensitization and influencing policy change\n-Distinguishing values",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the medical corps\n-Social workers\n-Peer educators",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Greenhouse effect and global warming",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Techniques of adaptation to global warming and climate change",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion\n-Causes\n-Effects/indicators\n-Prevention of global warming",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Global warming and climate change",
+        "categoryOfAction": "Reducing the effects of global warming",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Consequences of greenhouse gases and advocate against their emission\n-participating in campaigns and educative talks on the effects of greenhouse gases and respect rules minimizing their discharges into the atmosphere\n-Planting trees",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respect for the environment\n-Aforestation\n-Recycling and reduction in greenhouse gas emission",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "-Personnel from the Ministry of Environment and Nature Protection\n-Agricultural technicians\n-Environmentalist\n-conservationists",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "The ozone layer",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "Choice of appropriate household apparatus, aerosols with no CFCs",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Notion\n-Role of the ozone layer\n-Causes of ozone layer depletion/destruction/n-Prevention of ozone layer destruction",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "Destruction of the ozone layer",
+        "categoryOfAction": "Reducing/mitigating the effects of ozone layer destruction",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "-Identifying causes of ozone layer depletion and advocating against their emission\n-Identifying consequences of ozone layer depletion and designing sensitization and educational campaign talks on these consequences\n-Respecting rules for minimizing the discharge of ozone depleting substances into the atmosphere\n-Planting trees",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Respect for the environment\n-Recycling and reduction in ozone depleting substances\n-Love and respect for the environment and all that dwells there",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "",
+          "isExpandable": false
+        }
+      },
+      {
+        "topicName": "Management of waste",
+        "moduleName": "Environmental education and sustainable development",
+        "familyOfSituation": "Sustainable management of natural resources",
+        "numberOfPeriods": 4,
+        "isTaught": false,
+        "startDate": "",
+        "endDate": "",
+        "abilities": {
+          "title": "Abilities",
+          "value": "-Maintaining a clean environment through proper waste disposal",
+          "isExpandable": false
+        },
+        "subTopics": {
+          "title": "Subtopics",
+          "value": "-Management of solid waste(avoiding waste, reduce waste, reuse waste, recycle waste, incinerate waste, compost waste, feed animals with waste)\n-Management of liquid waste  e.g urine and faeces\n-Notion of latrines and types(surface latrine, drop latrine, bucket latrine, pit latrine and water closet)\n-Construction and management of a pit latrine\n-Care and management of water",
+          "isExpandable": false
+        },
+        "exampleOfSituation": "",
+        "categoryOfAction": "",
+        "examplesOfActions": {
+          "title": "Examples of action",
+          "value": "",
+          "isExpandable": false
+        },
+        "lifeSkills": {
+          "title": "Life skills",
+          "value": "-Love and respect for the environment and all that dwells there in",
+          "isExpandable": false
+        },
+        "otherResources": {
+          "title": "Other resources",
+          "value": "",
+          "isExpandable": false
+        }
+      }
+    ]
+  }
+}

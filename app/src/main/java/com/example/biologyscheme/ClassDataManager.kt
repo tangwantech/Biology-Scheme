@@ -4,10 +4,12 @@ import android.content.Context
 import com.example.biologyscheme.localrepository.RoomDatabaseManager
 import com.example.biologyscheme.models.ClassData
 import com.example.biologyscheme.models.ClassSchemeData
+import com.example.biologyscheme.remoteRepo.FireBaseDataManager
 
 class ClassDataManager(private val context: Context) {
     private var classData: ClassData? = null
     private var roomDatabaseManager = RoomDatabaseManager(context)
+    private var fireBaseDataManager = FireBaseDataManager()
     private val schemesForAllYears = mutableMapOf<String, ClassSchemeData>()
 
     fun loadClassSchemeFromDatabase(className: String, academicYear: String, onClassDataQueryListener: ClassDataQueryListener){
@@ -21,6 +23,24 @@ class ClassDataManager(private val context: Context) {
 
             override fun onClassDataUnAvailableFromRoom() {
                 onClassDataQueryListener.onClassDataUnAvailableFromRoom()
+            }
+
+        })
+    }
+
+    fun loadSchemeFromFireBase(className: String, academicYear: String, onReadSchemeFromAssertListener: OnReadSchemeFromAssertListener){
+        fireBaseDataManager.loadScheme(className, object : FireBaseDataManager.OnLoadSchemeListener{
+            override fun onSchemeLoaded(result: ClassSchemeData) {
+                result.academicYear = academicYear
+                setupScheme(className, result)
+                setSchemesForAllYears()
+                onReadSchemeFromAssertListener.onClassSchemeAvailable()
+                insertClassDataInRoom()
+            }
+
+            override fun onError() {
+                println("Scheme for $className is currently unavailable")
+                onReadSchemeFromAssertListener.onClassSchemeUnavailable()
             }
 
         })
@@ -66,6 +86,20 @@ class ClassDataManager(private val context: Context) {
                 onReadSchemeFromAssertListener.onClassSchemeUnavailable()
             }
         })
+    }
+
+    fun setupScheme(className: String, result: ClassSchemeData){
+        val temp = ArrayList<ClassSchemeData>()
+        if (classData?.schemesForAcademicYears != null){
+            temp.addAll(classData?.schemesForAcademicYears!!)
+            temp.add(result)
+            classData?.schemesForAcademicYears = temp
+        }else{
+            temp.add(result)
+            classData = ClassData(0, className, temp)
+        }
+//                println("class data $classData")
+
     }
 
     fun updateSchemeDataAt(academicYearIndex: Int, classSchemeData: ClassSchemeData){
@@ -119,5 +153,6 @@ class ClassDataManager(private val context: Context) {
         fun onClassSchemeAvailable()
         fun onClassSchemeUnavailable()
     }
+
 
 }

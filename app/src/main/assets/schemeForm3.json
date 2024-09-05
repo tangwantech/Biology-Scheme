@@ -1,0 +1,510 @@
+{
+  "academicYear": "2024-2025",
+  "className": "Form 3",
+  "topics": [
+    {
+      "topicName": "Notion of cells ",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "",
+      "endDate": "",
+      "abilities": {
+        "title": "Abilities",
+        "value": "The basic functional unit of all living organism",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "Ultra structure of plant and animal cells",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "Insufficient knowledge of the functioning of living processes",
+      "categoryOfAction": "Understanding cellular exchange to better conserve life",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "-The cell as the basic unit of life",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    },
+    {
+      "topicName": "Understanding Biology",
+      "moduleName": "Living World",
+      "familyOfSituation": "Supply of man's needs in animals and plant resources",
+      "numberOfPeriods": 4,
+      "isTaught": false,
+      "startDate": "Monday",
+      "endDate": "Friday",
+      "abilities": {
+        "title": "Abilities",
+        "value": "",
+        "isExpandable": false
+      },
+      "subTopics": {
+        "title": "Subtopics",
+        "value": "",
+        "isExpandable": false
+      },
+      "exampleOfSituation": "",
+      "categoryOfAction": "",
+      "examplesOfActions": {
+        "title": "Examples of action",
+        "value": "",
+        "isExpandable": false
+      },
+      "lifeSkills": {
+        "title": "Life skills",
+        "value": "",
+        "isExpandable": false
+      },
+      "otherResources": {
+        "title": "Other resources",
+        "value": "",
+        "isExpandable": false
+      }
+    }
+  ]
+}
