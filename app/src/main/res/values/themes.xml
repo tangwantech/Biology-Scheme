@@ -4,6 +4,15 @@
         <!-- Customize your light theme here. -->
          <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        <item name="android:statusBarColor" >@color/colorPrimaryVariant</item>-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+        <item name="android:textViewStyle">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="Theme.ActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:statusBarColor" >@color/colorPrimaryVariant</item>
         <item name="colorOnPrimary">@color/white</item>

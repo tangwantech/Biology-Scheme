@@ -1,78 +1,96 @@
 package com.example.biologyscheme
 
 import android.os.Bundle
-import android.view.MenuItem
+import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.ViewModelProvider
-import com.example.biologyscheme.fragments.AcademicYearAndClassFragment
-import com.example.biologyscheme.fragments.ProgressionSheetFragment
-import com.example.biologyscheme.fragments.TopicDetailsFragment
-import com.example.biologyscheme.models.TopicData
+import com.example.biologyscheme.databinding.ActivityMainBinding
 import com.example.biologyscheme.viewmodels.MainActivityViewModel
 
-class MainActivity : AppCompatActivity(), AcademicYearAndClassFragment.OnButtonClickListener, ProgressionSheetFragment.OnNavigateToTopicDetailsFragmentListener {
+class MainActivity : AppCompatActivity(){
+//    private lateinit var viewModel: MainActivityViewModel
+
     private lateinit var viewModel: MainActivityViewModel
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        title = getString(R.string.app_name)
         setupViewModel()
-        gotoAcademicYearAndClassFragment()
+
+    }
+
+    private fun gotoProgressionSheetActivity(){
+        val intent = ProgressionSheetActivity.getIntent(this)
+        intent.apply {
+            putExtra(Constants.ACADEMIC_YEAR, viewModel.getAcademicYear())
+            putExtra(Constants.CLASS_NAME, viewModel.getClassName())
+        }
+        startActivity(intent)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setupViewListeners()
+        changeBtnNextState()
+        setupAutocompleteViews()
+
     }
 
     private fun setupViewModel(){
         viewModel = ViewModelProvider(this)[MainActivityViewModel::class.java]
-        viewModel.initClassDataManager(this)
-
     }
 
-    private fun gotoAcademicYearAndClassFragment(){
-        val academicYearAndClassFragment = AcademicYearAndClassFragment.newInstance()
-        val transaction = supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragmentContainer, academicYearAndClassFragment)
+    private fun setupViewListeners(){
+        binding.btnNext.setOnClickListener {
+            gotoProgressionSheetActivity()
+
         }
-        transaction.commit()
-    }
 
-    private fun gotoProgressionSheetFragment(){
-        val progressionSheetFragment = ProgressionSheetFragment.newInstance()
-        val transaction = supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragmentContainer, progressionSheetFragment)
-            addToBackStack(null)
+        binding.btnExit.setOnClickListener {
+            finish()
         }
-        transaction.commit()
-    }
 
-    private fun gotoTopicDetailsFragment(itemPosition: Int){
-        val topicDetailsFragment = TopicDetailsFragment.newInstance(itemPosition)
-        val transaction = supportFragmentManager.beginTransaction().apply {
-            replace(R.id.fragmentContainer, topicDetailsFragment)
-            addToBackStack(null)
-        }
-        transaction.commit()
-    }
-
-    override fun onNextButtonClicked() {
-        gotoProgressionSheetFragment()
-    }
-
-    override fun onExitButtonClicked() {
-        finish()
-    }
-
-    override fun onNavigateToTopicDetailsFragment(itemPosition: Int) {
-//        println(topicData)
-        gotoTopicDetailsFragment(itemPosition)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId){
-            android.R.id.home -> {
-                println("on back pressed")
-                supportFragmentManager.popBackStack()
+        binding.autoCompleteAcademicYear.doOnTextChanged { text, start, before, count ->
+            changeBtnNextState()
+            val academicYear = text.toString()
+            if (academicYear.isNotEmpty()){
+                viewModel.setAcademicYearAndIndex(academicYear, Constants.ACADEMIC_YEARS.indexOf(academicYear))
             }
+
         }
-        return super.onOptionsItemSelected(item)
+
+        binding.autoCompleteClassName.doOnTextChanged { text, start, before, count ->
+            changeBtnNextState()
+            val className = text.toString()
+            if (className.isNotEmpty()){
+                viewModel.setClassName(className)
+            }
+
+        }
+
+
+    }
+
+    private fun changeBtnNextState(){
+        binding.btnNext.isEnabled = binding.autoCompleteAcademicYear.text.toString().isNotEmpty() && binding.autoCompleteClassName.text.toString().isNotEmpty()
+    }
+
+    private fun setupAutocompleteViews(){
+
+        val adapterAcademicYear = ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Constants.ACADEMIC_YEARS)
+        viewModel.getAcademicYear()?.let {
+            binding.autoCompleteAcademicYear.setText(it)
+        }
+        binding.autoCompleteAcademicYear.setAdapter(adapterAcademicYear)
+
+        viewModel.getClassName()?.let{
+            binding.autoCompleteClassName.setText(it)
+        }
+        val adapterClassName = ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, Constants.CLASS_NAMES)
+        binding.autoCompleteClassName.setAdapter(adapterClassName)
     }
 
 

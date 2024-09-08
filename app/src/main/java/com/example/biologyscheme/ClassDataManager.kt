@@ -10,13 +10,11 @@ class ClassDataManager(private val context: Context) {
     private var classData: ClassData? = null
     private var roomDatabaseManager = RoomDatabaseManager(context)
     private var fireBaseDataManager = FireBaseDataManager()
-    private val schemesForAllYears = mutableMapOf<String, ClassSchemeData>()
 
     fun loadClassSchemeFromDatabase(className: String, academicYear: String, onClassDataQueryListener: ClassDataQueryListener){
         roomDatabaseManager.loadClassDataFromRoom(className, academicYear, object: RoomDatabaseManager.OnRoomDatabaseQueryListener{
             override fun onClassDataAvailableFromRoom(result: ClassData) {
                 classData = result
-                setSchemesForAllYears()
                 onClassDataQueryListener.onClassDataAvailableFromRoom()
 
             }
@@ -28,27 +26,24 @@ class ClassDataManager(private val context: Context) {
         })
     }
 
-    fun loadSchemeFromFireBase(className: String, academicYear: String, onReadSchemeFromAssertListener: OnReadSchemeFromAssertListener){
-        fireBaseDataManager.loadScheme(className, object : FireBaseDataManager.OnLoadSchemeListener{
-            override fun onSchemeLoaded(result: ClassSchemeData) {
-                result.academicYear = academicYear
-                setupScheme(className, result)
-                setSchemesForAllYears()
-                onReadSchemeFromAssertListener.onClassSchemeAvailable()
-                insertClassDataInRoom()
-            }
+//    fun loadSchemeFromFireBase(className: String, academicYear: String, onReadSchemeFromAssertListener: OnReadSchemeFromAssertListener){
+//        fireBaseDataManager.loadScheme(className, object : FireBaseDataManager.OnLoadSchemeListener{
+//            override fun onSchemeLoaded(result: ClassSchemeData) {
+//                println("Scheme data available")
+//                result.academicYear = academicYear
+//
+//                onReadSchemeFromAssertListener.onClassSchemeAvailable()
+//                insertClassDataInRoom()
+//            }
+//
+//            override fun onError() {
+//                println("Scheme for $className is currently unavailable")
+//                onReadSchemeFromAssertListener.onClassSchemeUnavailable()
+//            }
+//
+//        })
+//    }
 
-            override fun onError() {
-                println("Scheme for $className is currently unavailable")
-                onReadSchemeFromAssertListener.onClassSchemeUnavailable()
-            }
-
-        })
-    }
-
-    fun insertClassDataToRoomDatabase(){
-        roomDatabaseManager.insertClassDataToRoom(classData!!)
-    }
 
 
     fun removeClassDataFromRoomDatabase(){
@@ -56,9 +51,7 @@ class ClassDataManager(private val context: Context) {
     }
 
     fun getSchemeForAcademicYear(academicYear: String): ClassSchemeData?{
-//        val temp = classData?.schemesForAcademicYears?.find { it.academicYear == academicYear}
-//        println(classData?.schemesForAcademicYears)
-        return schemesForAllYears[academicYear]
+        return classData?.classSchemeData
 
     }
 
@@ -66,18 +59,8 @@ class ClassDataManager(private val context: Context) {
         SchemeFileReader.readFromAssert(context, fileName, object: SchemeFileReader.OnResult{
             override fun result(result: ClassSchemeData) {
 
-                result.academicYear = academicYear
-                val temp = ArrayList<ClassSchemeData>()
-                if (classData?.schemesForAcademicYears != null){
-                    temp.addAll(classData?.schemesForAcademicYears!!)
-                    temp.add(result)
-                    classData?.schemesForAcademicYears = temp
-                }else{
-                    temp.add(result)
-                    classData = ClassData(0, className, temp)
-                }
-//                println("class data $classData")
-                setSchemesForAllYears()
+                val customId = className + academicYear
+                classData = ClassData(0, customId, className, academicYear, result)
                 onReadSchemeFromAssertListener.onClassSchemeAvailable()
                 insertClassDataInRoom()
             }
@@ -88,40 +71,14 @@ class ClassDataManager(private val context: Context) {
         })
     }
 
-    fun setupScheme(className: String, result: ClassSchemeData){
-        val temp = ArrayList<ClassSchemeData>()
-        if (classData?.schemesForAcademicYears != null){
-            temp.addAll(classData?.schemesForAcademicYears!!)
-            temp.add(result)
-            classData?.schemesForAcademicYears = temp
-        }else{
-            temp.add(result)
-            classData = ClassData(0, className, temp)
-        }
-//                println("class data $classData")
 
-    }
-
-    fun updateSchemeDataAt(academicYearIndex: Int, classSchemeData: ClassSchemeData){
-        val temp = ArrayList<ClassSchemeData>()
-         temp.addAll(classData?.schemesForAcademicYears!!)
-        temp[academicYearIndex] = classSchemeData
-        classData?.schemesForAcademicYears = temp
-        setSchemesForAllYears()
+    fun updateSchemeData(classSchemeData: ClassSchemeData){
+        classData?.classSchemeData = classSchemeData
         updateClassDataInRoom()
     }
 
     fun removeSchemeDataAt(academicYearIndex: Int, classSchemeData: ClassSchemeData){
-        if (academicYearIndex in classData?.schemesForAcademicYears!!.indices &&
-            classData?.schemesForAcademicYears!![academicYearIndex].academicYear == classSchemeData.academicYear){
-            val temp = ArrayList<ClassSchemeData>()
-            temp.addAll( classData?.schemesForAcademicYears!!)
-            temp.remove(classSchemeData)
-            classData?.schemesForAcademicYears = temp
-            updateClassDataInRoom()
 
-
-        }
     }
 
     private fun insertClassDataInRoom(){
@@ -136,14 +93,10 @@ class ClassDataManager(private val context: Context) {
         roomDatabaseManager.clearRoomDatabase()
     }
 
-    fun setSchemesForAllYears(){
-        schemesForAllYears.clear()
-        classData!!.schemesForAcademicYears.forEach {
-            classSchemeData ->
-            val year = classSchemeData.academicYear
-            schemesForAllYears[year] = classSchemeData
-        }
+    fun resetClassData() {
+        classData = null
     }
+
     interface ClassDataQueryListener{
         fun onClassDataAvailableFromRoom()
         fun onClassDataUnAvailableFromRoom()

@@ -29,6 +29,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/topic"
                     android:textStyle="bold"
+                    android:layout_toStartOf="@id/checkBoxTopic"
                     android:layout_alignBaseline="@id/checkBoxTopic"/>
                 <CheckBox
                     android:id="@+id/checkBoxTopic"

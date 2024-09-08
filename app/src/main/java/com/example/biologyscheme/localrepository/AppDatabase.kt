@@ -5,12 +5,12 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.example.biologyscheme.models.SchemesForAcademicYearsConverter
 import com.example.biologyscheme.models.ClassData
+import com.example.biologyscheme.models.ClassSchemeTypeConverter
 
 
 @Database (entities = [ClassData::class], version = 1)
-@TypeConverters (SchemesForAcademicYearsConverter::class)
+@TypeConverters (ClassSchemeTypeConverter::class)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun classDataDao(): ClassDataDao
 

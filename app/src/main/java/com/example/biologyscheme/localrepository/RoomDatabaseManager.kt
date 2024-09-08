@@ -11,9 +11,9 @@ class RoomDatabaseManager(private val context: Context) {
     private val roomDB = AppDatabase.getDatabase(context)
 
     fun loadClassDataFromRoom(className: String, academicYear: String, onRoomDatabaseQueryListener: OnRoomDatabaseQueryListener){
-
+        val customId = className + academicYear
         CoroutineScope(Dispatchers.IO).launch {
-            val temp = roomDB.classDataDao().getClassData(className)
+            val temp = roomDB.classDataDao().getClassData(customId)
 
             withContext(Dispatchers.Main){
 

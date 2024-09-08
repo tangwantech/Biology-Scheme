@@ -15,8 +15,11 @@ interface ClassDataDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertClassData(value: ClassData)
 
-    @Query("SELECT* FROM class_data_table WHERE className= :className")
-    fun getClassData(className: String): List<ClassData>
+//    @Query("SELECT* FROM class_data_table WHERE className= :className")
+//    fun getClassData(className: String): List<ClassData>
+
+    @Query("SELECT* FROM class_data_table WHERE customId= :customId")
+    fun getClassData(customId: String): List<ClassData>
 
     @Delete
     fun removeClassData(value: ClassData)

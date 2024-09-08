@@ -1,0 +1,38 @@
+{
+  "Form 1A": {
+    "Students":[
+      {
+        "name": "John Doe",
+        "schoolId": "12345",
+        "gender": "M",
+        "classNumber ": "null",
+        "Sequences": {
+          "Sequence 1": {
+            "Days": {
+              "01-01-2024": {
+                "isPresent": true,
+                "numberOfAbsences": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Mary Linn",
+        "schoolId": "1333",
+        "gender": "F",
+        "classNumber ": "null",
+        "Sequences": {
+          "Sequence 1": {
+            "Days": {
+              "01-01-2024": {
+                "isPresent": true,
+                "numberOfAbsences": 0
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

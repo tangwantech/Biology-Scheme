@@ -12,22 +12,29 @@ data class ClassData(
     @PrimaryKey(autoGenerate = true)
     var id: Int,
 
+    @ColumnInfo(name = "customId")
+    val customId: String,
+
     @ColumnInfo(name = "className")
     val className: String,
 
-    @ColumnInfo(name = "allAcademicYearsSchemes")
-    var schemesForAcademicYears: List<ClassSchemeData>){
+    @ColumnInfo(name = "academicYear")
+    val academicYear: String,
 
-}
+    @ColumnInfo(name = "schemeData")
+    var classSchemeData: ClassSchemeData
+//    @ColumnInfo(name = "allAcademicYearsSchemes")
+//    var schemesForAcademicYears: List<ClassSchemeData>
+)
 
-class SchemesForAcademicYearsConverter{
+class ClassSchemeTypeConverter{
 
 
     @TypeConverter
-    fun fromListToJson(value: List<ClassSchemeData>) = Gson().toJson(value)
+    fun fromListToJson(value: ClassSchemeData) = Gson().toJson(value)
 
     @TypeConverter
-    fun fromJsonToList(value: String) = Gson().fromJson(value, Array<ClassSchemeData>::class.java).toList()
+    fun fromJsonToList(value: String) = Gson().fromJson(value, ClassSchemeData::class.java)
 }
 
 

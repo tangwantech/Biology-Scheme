@@ -1,101 +1,108 @@
-package com.example.biologyscheme.fragments
+package com.example.biologyscheme
 
+import android.content.Context
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
-import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import com.example.biologyscheme.R
-import com.example.biologyscheme.databinding.FragmentTopicDetailsBinding
-import com.example.biologyscheme.viewmodels.ProgressionSheetViewModel
+import com.example.biologyscheme.databinding.ActivityTopicDetailsBinding
+import com.example.biologyscheme.viewmodels.TopicsDetailsViewModel
 
-class TopicDetailsFragment : Fragment() {
-    private lateinit var binding: FragmentTopicDetailsBinding
-    private lateinit var progressionSheetViewModel: ProgressionSheetViewModel
+class TopicDetailsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityTopicDetailsBinding
+    private lateinit var viewModel: TopicsDetailsViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
+        binding = ActivityTopicDetailsBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        title = getString(R.string.topic_details)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        setupViewModel()
+        setupListeners()
+        setupObservers()
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                return true
+            }else -> return super.onOptionsItemSelected(item)
+        }
+    }
+
+    private fun setupObservers() {
+        viewModel.topicsDetailsDataAvailable.observe(this){
+            if(it){
+                binding.progressBarCard.visibility = View.GONE
+                setupViews()
+            }else{
+                binding.progressBarCard.visibility = View.VISIBLE
+            }
 
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentTopicDetailsBinding.inflate(inflater, container, false)
-        return binding.root
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-//        setupToolBar()
-//        setupViewModel()
-    }
-
-    override fun onResume() {
-        super.onResume()
-        setupToolBar()
-        setupViewModel()
-        setupViews()
-        setupListeners()
+    private fun setAcademicYearAndClassName(){
+        viewModel.setAcademicYear(intent.getStringExtra(Constants.ACADEMIC_YEAR)!!)
+        viewModel.setClassName(intent.getStringExtra(Constants.CLASS_NAME)!!)
     }
 
     private fun setupViewModel(){
-        progressionSheetViewModel = ViewModelProvider(requireActivity())[ProgressionSheetViewModel::class.java]
+
+        viewModel = ViewModelProvider(this)[TopicsDetailsViewModel::class.java]
+        setAcademicYearAndClassName()
+        initRoomDatabase()
+    }
+
+    private fun initRoomDatabase(){
+        viewModel.initRoomDatabaseManager(this)
     }
 
     private fun setupViews(){
-        val itemPosition = arguments?.getInt(ITEM_POSITION)
-        itemPosition?.let {
-            val topicData = (progressionSheetViewModel.getTopicDetails(it))
-            binding.tvTopic.tvItem.text = requireContext().getString(R.string.topic_title, topicData.topicName)
+
+        val itemPosition = intent.getIntExtra(Constants.ITEM_POSITION, -1)
+        if (itemPosition > -1){
+            val topicData = (viewModel.getTopicDetails(itemPosition))
+            binding.tvTopic.tvItem.text = getString(R.string.topic_title, topicData.topicName)
             binding.tvTopic.tvItem.typeface = Typeface.DEFAULT_BOLD
 
-            binding.tvDateRange.text = requireContext().getString(R.string.date_range, topicData.startDate, topicData.endDate)
+            binding.tvDateRange.text = getString(R.string.date_range, topicData.startDate, topicData.endDate)
 
-            binding.tvModule.tvItem.text = requireContext().getString(R.string.module, topicData.moduleName)
+            binding.tvModule.tvItem.text = getString(R.string.module, topicData.moduleName)
 
-            binding.tvFamilyOfSituation.tvItem.text = requireContext().getString(R.string.family_situation, topicData.familyOfSituation)
+            binding.tvFamilyOfSituation.tvItem.text = getString(R.string.family_situation, topicData.familyOfSituation)
 
-            binding.tvNumberOfPeriods.tvItem.text = requireContext().getString(R.string.number_of_periods, topicData.numberOfPeriods.toString())
+            binding.tvNumberOfPeriods.tvItem.text = getString(R.string.number_of_periods, topicData.numberOfPeriods.toString())
 
-            val status = if (topicData.isTaught) requireContext().getString(R.string.completed) else requireContext().getString(R.string.not_completed)
-            binding.tvTopicStatus.tvItem.text = requireContext().getString(R.string.topic_status, status)
+            val status = if (topicData.isTaught) getString(R.string.completed) else getString(R.string.not_completed)
+            binding.tvTopicStatus.tvItem.text = getString(R.string.topic_status, status)
 
-            binding.dropdownCategoryOfAction.tvItem.text = requireContext().getString(R.string.category_of_action, topicData.categoryOfAction)
+            binding.dropdownCategoryOfAction.tvItem.text = getString(R.string.category_of_action, topicData.categoryOfAction)
 
-            binding.dropdownExampleOfSituation.tvItem.text = requireContext().getString(R.string.example_of_situation, topicData.exampleOfSituation)
+            binding.dropdownExampleOfSituation.tvItem.text = getString(R.string.example_of_situation, topicData.exampleOfSituation)
 
 
-            binding.dropdownAbilities.tvListViewTitle.text = topicData.abilities.title
-            binding.dropdownAbilities.tvValue.text = topicData.abilities.value
+            binding.dropdownAbilities.tvListViewTitle.text = topicData.abilities?.title
+            binding.dropdownAbilities.tvValue.text = topicData.abilities?.value
 
-            binding.dropdownSubtopics.tvListViewTitle.text = topicData.subTopics.title
-            binding.dropdownSubtopics.tvValue.text = topicData.subTopics.value
+            binding.dropdownSubtopics.tvListViewTitle.text = topicData.subTopics?.title
+            binding.dropdownSubtopics.tvValue.text = topicData.subTopics?.value
 
-            binding.dropdownExamplesOfActions.tvListViewTitle.text = topicData.examplesOfActions.title
-            binding.dropdownExamplesOfActions.tvValue.text = topicData.examplesOfActions.value
+            binding.dropdownExamplesOfActions.tvListViewTitle.text = topicData.examplesOfActions?.title
+            binding.dropdownExamplesOfActions.tvValue.text = topicData.examplesOfActions?.value
 
-            binding.dropdownLifeSkills.tvListViewTitle.text = topicData.lifeSkills.title
-            binding.dropdownLifeSkills.tvValue.text = topicData.lifeSkills.value
+            binding.dropdownLifeSkills.tvListViewTitle.text = topicData.lifeSkills?.title
+            binding.dropdownLifeSkills.tvValue.text = topicData.lifeSkills?.value
 
-            binding.dropdownOtherResources.tvListViewTitle.text = topicData.otherResources.title
-            binding.dropdownOtherResources.tvValue.text = topicData.otherResources.value
+            binding.dropdownOtherResources.tvListViewTitle.text = topicData.otherResources?.title
+            binding.dropdownOtherResources.tvValue.text = topicData.otherResources?.value
         }
     }
 
-    private fun setupToolBar(){
-        val activity = requireActivity() as AppCompatActivity
-        activity.setSupportActionBar(binding.toolBar.toolBar)
-        activity.supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        activity.supportActionBar?.title = requireContext().getString(R.string.topic_details)
-
-    }
 
     private fun setupListeners(){
         binding.dropdownSubtopics.loDropDown.setOnClickListener {
@@ -129,7 +136,7 @@ class TopicDetailsFragment : Fragment() {
 
         binding.dropdownAbilities.loDropDown.setOnClickListener {
             if(binding.dropdownAbilities.listViewCard.visibility == View.VISIBLE){
-                binding.dropdownAbilities.listViewCard.visibility =View.GONE
+                binding.dropdownAbilities.listViewCard.visibility = View.GONE
                 binding.dropdownAbilities.icDown.visibility = View.VISIBLE
                 binding.dropdownAbilities.icUp.visibility = View.GONE
                 binding.dropdownAbilities.divider.visibility = View.GONE
@@ -172,15 +179,10 @@ class TopicDetailsFragment : Fragment() {
         }
     }
 
-    companion object {
-        const val FRAGMENT_NAME = "TopicDetailsFragment"
-        const val ITEM_POSITION = "Item position"
-        fun newInstance(itemPosition: Int) =
-            TopicDetailsFragment().apply {
-                arguments = Bundle().apply {
-                    putInt(ITEM_POSITION, itemPosition)
-                }
-            }
-    }
+    companion object{
+        fun getIntent(context: Context): Intent{
+            return Intent(context, TopicDetailsActivity::class.java)
+        }
 
+    }
 }

@@ -1,41 +1,42 @@
 package com.example.biologyscheme.remoteRepo
 
-import com.example.biologyscheme.SchemeFileReader
 import com.example.biologyscheme.models.ClassSchemeData
 import com.google.firebase.Firebase
+import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
-import com.google.gson.Gson
+import com.google.firebase.database.ktx.values
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
+
 class FireBaseDataManager {
     private val firebaseDatabase: FirebaseDatabase = Firebase.database
-    private val dbRef = firebaseDatabase.getReference("BiologySchemes")
+    private val dbRef = firebaseDatabase.reference
 
 
-    fun loadScheme(className:String, onLoadSchemeListener: OnLoadSchemeListener) {
+    fun loadScheme(databaseRef: String, className:String, onLoadSchemeListener: OnLoadSchemeListener) {
+        val dbSchemeRef = dbRef.child(databaseRef)
 
-        CoroutineScope(Dispatchers.IO).launch {
-            var scheme: ClassSchemeData? = null
-            dbRef.child(className).get().addOnSuccessListener {
-                println(it.value)
-//                scheme = Gson().fromJson(it.value.toString(), ClassSchemeData::class.java)
-//                println(scheme)
-            }
-            withContext(Dispatchers.Main){
-                if (scheme != null) {
-
-                    onLoadSchemeListener.onSchemeLoaded(scheme!!)
-                } else {
-                    onLoadSchemeListener.onError()
+        dbSchemeRef.child(className).addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                val classSchemeData = snapshot.getValue(ClassSchemeData::class.java)
+//                println("Scheme from firebase: $classSchemeData")
+                if(classSchemeData != null){
+                    onLoadSchemeListener.onSchemeLoaded(classSchemeData!!)
                 }
             }
-        }
+
+            override fun onCancelled(error: DatabaseError) {
+                println("error...${error.message}")
+            }
+
+        })
 
     }
 

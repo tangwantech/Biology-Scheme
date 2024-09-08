@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".fragments.ProgressionSheetFragment">
-
-    <include
-        android:id="@+id/toolBar"
-        layout="@layout/tool_bar"/>
+    tools:context=".ProgressionSheetActivity">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="28dp"
-        android:background="@color/colorPrimary"
-        android:layout_below="@id/toolBar"/>
+        android:background="@color/colorPrimary" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardHeader"
@@ -28,8 +24,7 @@
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        android:layout_below="@id/toolBar">
+        app:cardCornerRadius="8dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -108,6 +103,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:listitem="@layout/one_line_card_item"/>
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
         </FrameLayout>
 
 
